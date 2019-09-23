@@ -27,6 +27,13 @@ GIT_USERNAME = ""
 1) JDK 8
 2) IDE
 
+## Solution
+
+ 1) Github and gitlab api are integrated in single unified api.
+ 2) Please identify the github and gutlab repositories from there respective url.
+ 3) For particular user use /repo/user api.
+
+
 ## Running the tests
 
 Run the junit class in src/test folder
