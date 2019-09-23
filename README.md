@@ -1,10 +1,19 @@
 # Project Title
 
-One Paragraph of project description goes here
+Java Coding Assignment
 
-## Getting Started
+## Problem statement
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+# User is searching for Github and GitLab users and their projects using the Github and
+  GitLab APIs respectively.
+# The aim is to consume all the APIs and create a single unified API.
+  1. To begin with, you can use either of the provided APIs(Github/GitLab),
+  2. However a merge of both the APIs responses as single output is an added advantage
+  3. Your API design must allow newer APIs integration.
+# Along with the searching, there should be an option in the API that will allow filtering
+  the results based on ownership(fetch only the repositories those are owned by the user)
+  And using response, one should be able to identify if the project is on Gitlab or Github.
+
 
 ### Prerequisites
 
