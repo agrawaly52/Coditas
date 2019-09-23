@@ -26,11 +26,10 @@ GIT_USERNAME = ""
 
 1) JDK 8
 2) IDE
-3) po
 
 ## Running the tests
 
-Run the junit  class
+Run the junit class in src/test folder
 
 ## Built With
 
