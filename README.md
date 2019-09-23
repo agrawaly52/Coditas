@@ -4,46 +4,33 @@ Java Coding Assignment
 
 ## Problem statement
 
-# User is searching for Github and GitLab users and their projects using the Github and
-  GitLab APIs respectively.
-# The aim is to consume all the APIs and create a single unified API.
-  1. To begin with, you can use either of the provided APIs(Github/GitLab),
-  2. However a merge of both the APIs responses as single output is an added advantage
-  3. Your API design must allow newer APIs integration.
-# Along with the searching, there should be an option in the API that will allow filtering
-  the results based on ownership(fetch only the repositories those are owned by the user)
-  And using response, one should be able to identify if the project is on Gitlab or Github.
+  1) User is searching for Github and GitLab users and their projects using the Github and
+    GitLab APIs respectively.
+  2) The aim is to consume all the APIs and create a single unified API.
+    1. To begin with, you can use either of the provided APIs(Github/GitLab),
+    2. However a merge of both the APIs responses as single output is an added advantage
+    3. Your API design must allow newer APIs integration.
+  3) Along with the searching, fetch only the repositories those are owned by the user
+    And using response, one should be able to identify if the project is on Gitlab or Github.
 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Change the constants define in the Constant.java file
 
 ```
-Give examples
+GIT_USERNAME = ""
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+1) JDK 8
+2) IDE
+3) po
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Run the junit  class
 
 ### Break down into end to end tests
 
