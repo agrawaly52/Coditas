@@ -12,7 +12,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 import com.git.modal.Project;
 import com.git.modal.Repository;
 import com.git.service.GitService;
+import com.git.util.Constants;
 
+import io.netty.util.Constant;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -31,7 +33,7 @@ public class GitServiceImpl implements GitService {
 				.onStatus(HttpStatus::is5xxServerError, clientResponse -> Mono.error(new Exception()))
 				.bodyToFlux(Repository.class);
 
-		Flux<Repository> gitlabFlux = getWebClentForGitLab().get().uri("users/agrawaly52/projects").retrieve()
+		Flux<Repository> gitlabFlux = getWebClentForGitLab().get().uri("users/"+Constants.GITLAB_USERNAME+"/projects").retrieve()
 				.onStatus(HttpStatus::is4xxClientError, clientResponse -> Mono.error(new Exception()))
 				.onStatus(HttpStatus::is5xxServerError, clientResponse -> Mono.error(new Exception()))
 				.bodyToFlux(Repository.class);
@@ -56,7 +58,7 @@ public class GitServiceImpl implements GitService {
 
 	private WebClient getWebClent() {
 		return WebClient.builder().baseUrl("https://api.github.com/")
-				.defaultHeaders(header -> header.setBasicAuth("agrawaly52@gmail.com", "yash@1010"))
+				.defaultHeaders(header -> header.setBasicAuth(Constants.GIT_USERNAME, Constants.GIT_PASSWORD))
 				.defaultHeader(HttpHeaders.ACCEPT, "application/vnd.github.inertia-preview+json").build();
 	}
 
